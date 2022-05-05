@@ -26,6 +26,7 @@
         <module>../sc-config-9031</module>
         <module>../sc-gateway-9041</module>
         <module>../sc-stream-9051</module>
+        <module>../sc-zipkin-server-9061</module>
     </modules>
 
     <dependencyManagement>
@@ -43,6 +44,10 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
         <!--日志依赖-->
         <dependency>
@@ -91,11 +96,6 @@
             <version>1.1.1</version>
         </dependency>
         <!--引⼊Jaxb，结束-->
-        <dependency>
-            <groupId>de.codecentric</groupId>
-            <artifactId>spring-boot-admin-client</artifactId>
-            <version>2.6.6</version>
-        </dependency>
     </dependencies>
 
     <build>
